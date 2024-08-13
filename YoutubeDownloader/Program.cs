@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection;
+using System.Reflection.Emit;
 using Avalonia;
 using Avalonia.WebView.Desktop;
 using YoutubeDownloader.Utils;
@@ -18,7 +19,7 @@ public static class Program
 
     public static bool IsDevelopmentBuild { get; } = Version.Major is <= 0 or >= 999;
 
-    public static string ProjectUrl { get; } = "https://github.com/Tyrrrz/YoutubeDownloader";
+    public static string ProjectUrl { get; } = "";
 
     public static string ProjectReleasesUrl { get; } = $"{ProjectUrl}/releases";
 

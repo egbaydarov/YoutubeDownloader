@@ -19,7 +19,6 @@ public static class FileNameTemplate
                 .Replace("$num", number is not null ? $"[{number}]" : "", StringComparison.Ordinal)
                 .Replace("$id", video.Id, StringComparison.Ordinal)
                 .Replace("$title", video.Title, StringComparison.Ordinal)
-                .Replace("$author", video.Author.ChannelTitle, StringComparison.Ordinal)
                 .Replace(
                     "$uploadDate",
                     (video as Video)?.UploadDate.ToString("yyyy-MM-dd") ?? "",

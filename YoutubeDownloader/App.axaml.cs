@@ -33,13 +33,11 @@ public class App : Application, IDisposable
 
         // Framework
         services.AddSingleton<DialogManager>();
-        services.AddSingleton<SnackbarManager>();
         services.AddSingleton<ViewManager>();
         services.AddSingleton<ViewModelManager>();
 
         // Services
         services.AddSingleton<SettingsService>();
-        services.AddSingleton<UpdateService>();
 
         // View models
         services.AddTransient<MainViewModel>();
